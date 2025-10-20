@@ -6,7 +6,7 @@ consulted:
 informed: 
 ---
 
-# <!-- short title, representative of solved problem and found solution -->
+# Proof of Concept program for ABC Limited's Complaint Management System
 
 ## Context and Problem Statement
 
@@ -18,16 +18,19 @@ informed:
 
 ## Considered Options
 
-* <!-- option -->
+* Onion Architecture
+* Layered Architecture
+* Monolithic Architecture
+* Ntier Architecture
 
 ## Decision Outcome
 
-Chosen option: "", because
+I have chosen to utilise a Layered architecture for the CMS proof of concept because it is going to be much easier to find and fix bugs within the system than using a monolithic architecture due to each component of the system being seperated into its own layer. The layered architecture is also going to work better than the onion architecture due to the scale of the project, as it is only a proof of concept the layered architecture will be faster to implement and the simpler nature of a layered architecture is beneficial for a proof of concept.
 
 ### Consequences
 
-* Good, because
-* Bad, because
+* Good, simple nature benefits the smaller nature of a proof of concept
+* Bad, while the layered architecture is scalable, it is less scalable than other architectures such as the onion
 
 ### Confirmation
 
@@ -35,10 +38,37 @@ Chosen option: "", because
 
 ## Pros and Cons of the Options
 
-### <!-- title of option -->
+### Layered
 
-* Good, because
-* Neutral, because
-* Bad, because
+#### Pros:
+* Easy to bugfix due to code being better structured
+* Somewhat Scalable
+#### Cons:
+* Built around the database so that will be harder to change out
 
-## More Information
+### Onion
+
+#### Pros:
+* Easy to bugfix due to layered nature
+* Very scalable due to each part being swappable
+* Database can be swapped without causing problems
+#### Cons:
+* More difficult to use, especially at a small scale
+
+### Monolith
+
+#### Pros:
+* Easy to make/ very simple
+#### Cons:
+* Not scalable
+* No components can be swapped out
+* Bugs are harder to locate due to everything being in one .exe
+
+### Ntier
+
+#### Pros:
+* components are seperated into tiers making bugfixes easy
+* scalable due to tiers being able to have layers 
+#### Cons:
+* built around the database
+
