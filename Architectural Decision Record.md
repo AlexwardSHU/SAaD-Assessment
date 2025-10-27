@@ -9,8 +9,7 @@ informed:
 # Proof of Concept program for ABC Limited's Complaint Management System
 
 ## Context and Problem Statement
-
-
+This ADR is for the proof of concept i will be making of the Complaint Management System for ABC Limited. this system would be created for banking and telecom companies to allow their customers to easily log complaints they have with the company in a placer that said company can easily access and respont to them. I will be creating a proof of concept for this program, involving the user being able to acces the system and link their bank account to the CMS in order to ensure they are sending complaints to the right company, as well as giving users the ability to write upo whatever complaint they have or possibly choose from a selection of generic complaints if their issue is nothing too specific.
 
 ## Decision Drivers
 
@@ -25,7 +24,7 @@ informed:
 
 ## Decision Outcome
 
-I have chosen to utilise a Layered architecture for the CMS proof of concept because it is going to be much easier to find and fix bugs within the system than using a monolithic architecture due to each component of the system being seperated into its own layer. The layered architecture is also going to work better than the onion architecture due to the scale of the project, as it is only a proof of concept the layered architecture will be faster to implement and the simpler nature of a layered architecture is beneficial for a proof of concept.
+I have chosen to utilise a Layered architecture for the CMS proof of concept because it is going to be much easier to find and fix bugs within the system than using a monolithic architecture due to each component of the system being seperated into its own layer. The layered architecture is also going to work better than the onion architecture due to the scale of the project, as it is only a proof of concept the layered architecture will be faster to implement and the simpler nature of a layered architecture is beneficial for a proof of concept. It works well for the CMS POC as i can seperate each component of the CMS into layers, such as the login and complaint logging, making it easy to see how it flows through each layer before being saved to the database.
 
 ### Consequences
 
