@@ -11,10 +11,6 @@ informed:
 ## Context and Problem Statement
 This ADR is for the proof of concept i will be making of the Complaint Management System for ABC Limited. this system would be created for banking and telecom companies to allow their customers to easily log complaints they have with the company in a placer that said company can easily access and respont to them. I will be creating a proof of concept for this program, involving the user being able to acces the system and link their bank account to the CMS in order to ensure they are sending complaints to the right company, as well as giving users the ability to write upo whatever complaint they have or possibly choose from a selection of generic complaints if their issue is nothing too specific.
 
-## Decision Drivers
-
-* <!-- decision driver -->
-
 ## Considered Options
 
 * Onion Architecture
@@ -33,7 +29,7 @@ I have chosen to utilise a Layered architecture for the CMS proof of concept bec
 
 ### Confirmation
 
-
+I have chosen the Layered Architecture
 
 ## Pros and Cons of the Options
 
